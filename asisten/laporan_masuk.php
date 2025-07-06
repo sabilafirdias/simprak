@@ -14,7 +14,8 @@ $sql = "SELECT l.*, m.judul AS nama_modul, u.nama AS nama_mahasiswa, p.nama_prak
         JOIN users u ON l.id_user = u.id
         JOIN praktikum p ON m.id_praktikum = p.id
         WHERE u.role = 'mahasiswa'";
-
+ 
+ // Tambahkan filter jika ada
 if ($filter) {
     $sql .= " AND p.id = $filter";
 }
