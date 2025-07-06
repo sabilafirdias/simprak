@@ -1,4 +1,6 @@
 <?php
+$pageTitle = 'Nilai & Feedback';
+$activePage = 'nilai';
 ob_start();
 session_start();
 
@@ -46,7 +48,6 @@ require_once 'templates/header.php';
 ?>
 
 <div class="p-6">
-    <h1 class="text-2xl font-bold mb-4">Beri Nilai & Feedback</h1>
 
     <?php if (isset($error)): ?>
         <div class="bg-red-100 text-red-700 p-3 mb-4 rounded">
